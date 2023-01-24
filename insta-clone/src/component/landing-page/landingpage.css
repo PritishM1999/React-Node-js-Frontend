@@ -1,0 +1,74 @@
+.landing {
+    display: flex;
+}
+
+.landing-image img {
+    object-fit: cover;
+    width: 70%;
+}
+
+
+.landing-actions {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.landing-text {
+    color: indianred;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.landing-actions a {
+    align-self: center;
+    margin-left: 150px;
+}
+
+.landing-text {
+    display: inline;
+    align-self: center;
+    margin-left: 150px;
+}
+
+.landing-button button {
+    border-color: blue;
+    border-radius: 10px;
+    color: green;
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+}
+
+
+/* .container{
+    display: flex;
+    padding-top: 100px;
+    text-align: center;
+}
+.landingpage-button{
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 21px;
+    font-size: xx-large;
+    color: indianred;
+}
+.landingpage-heading{
+    color: indianred;
+}
+.landingpage-button:hover{
+    background-color:indianred;
+    color: white;
+}
+.container1{
+    padding-top:70px;
+}
+.welcomeheading{
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+    background-color:indianred;
+} */

@@ -1,0 +1,26 @@
+{
+    "user":
+            [
+            {"name":"Siva",
+            "location":"Bengaluru",
+            "likes":64,
+            "description": "Kick start your career",
+            "PostImage": "./images/airplane-flight-plane-wing.jpg",
+            "date": "21/02/2023"
+            },
+            {"name":"Neeraj",
+            "location":"Pune",
+            "likes":30,
+            "description": "Sample Description",
+            "PostImage": "./images/Munnar_hillstation_kerala.jpg",
+            "date": "19/02/2023"
+            },
+            {"name":"Rahul",
+            "location":"Hyderabad",
+            "likes":30,
+            "description": "Sample Description for Post",
+            "PostImage": "./images/Sunflower_sky_backdrop.jpg",
+            "date": "20/01/2023"
+            }
+        ]
+}
