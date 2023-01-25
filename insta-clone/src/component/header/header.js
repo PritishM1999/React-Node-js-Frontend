@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="header">
                 <section className="logo">
                     <img src={require("../../images/icon.png")} alt="logo" />
-                    Instaclone
+                    <span>Instaclone</span>
                 </section>
                 
                 <section className="camera-icon">

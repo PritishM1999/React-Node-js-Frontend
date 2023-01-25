@@ -3,22 +3,26 @@ import React from 'react';
 import Card from '../../card';
 import Header from '../header/header'
 
-
 const PostView = () => {
     const [serverResponse, setServerResponse] = useState(null)
 
     const AllPost = async ()=>{
-        const show = await fetch("http://localhost:8080/all")
-        setServerResponse(await show.json())
-    }
+        const show = await fetch("https://instaclone-1c2m.onrender.com/all")
 
+        // const show = await fetch("http://localhost:8080/all")
+
+
+        setServerResponse(await show.json());
+    }
 
     useEffect(()=>{
         AllPost()
     }, [])
 
     if(serverResponse == null){
-        return <h2>Loading...</h2>
+        return (
+        <h2>Loading...</h2>
+        )
     }
 
     return (

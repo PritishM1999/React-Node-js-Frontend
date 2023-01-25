@@ -75,8 +75,8 @@
 .warn{
     margin-top: 180px;
     align-items: center;
-    margin-left: 700px;
-
+    margin-left: 400px;
+    font-weight: bolder;
 }
 
 @media(max-width: 750px){

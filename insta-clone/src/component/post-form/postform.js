@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import Header from "../header/header";
 import "./post-form.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Post = () => {
     const [name, setAuther] = useState('');
     const [location, setLocation] = useState('');
     const [imagefile, setImageFile] = useState('');
     const [description, setDescription] = useState('');
-
+    const navigate = useNavigate(); 
     const uploadPost = () => {
+    
       const formData = new FormData() // formData is like Map takes the data in key value data
 
       formData.append("name", name)
@@ -23,10 +25,18 @@ const Post = () => {
         console.log(val, key);
       })
 
+      // fetch("https://instaclone-1c2m.onrender.com/api", {
+      //     method: 'POST',
+      //     body: formData
+      // })
+
       fetch("http://localhost:8080/api", {
             method: 'POST',
             body: formData
       })
+
+      
+      navigate('/post_view')
       // files: [], body: {}
 
 
@@ -43,7 +53,7 @@ const Post = () => {
       //         file: imagefile
               
       //     })
-      //   })
+      //   })  
     }
 
     return (
@@ -71,16 +81,17 @@ const Post = () => {
                                         onChange={(e) => setDescription(e.target.value)} />
                 </div>
                 <Link to={"/post-view"}>
-                <input type="submit" id="newpost" value="Post" alt="view-post" onClick={uploadPost}/>
+                <input type="submit" id="newpost" value="Post" alt="view-post" onClick={uploadPost} />
                 </Link>
               </form>
             </div>
           </section>
           <div className="warn">
-            <h3>Please reload/refresh the page after posting new posts...</h3>
+            <p>If post not visible, Please reload/refresh the page after posting new posts...</p>
           </div>
         </>
     )
+
 }
 
 export default Post;

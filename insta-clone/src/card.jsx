@@ -24,6 +24,7 @@ const Card = ({prop}) =>{
 
                     <div>
                         <img src={`http://localhost:8080/images/${prop.imagefile}`} alt="Myimage"></img>
+                        {/* <img src={`https://instaclone-1c2m.onrender.com/images/${prop.imagefile}`} alt="Myimage"></img> */}
                     </div>
 
                 </section>
